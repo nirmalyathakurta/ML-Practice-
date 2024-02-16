@@ -1,20 +1,6 @@
 import numpy as np
 
 def gauss_seidel(A, b, w, tol=1e-6, max_iter=100):
-  """
-  Solves a system of linear equations Ax = b using the Gauss-Seidel method with relaxation.
-
-  Args:
-    A: A square numpy array representing the coefficient matrix.
-    b: A numpy array representing the right-hand side vector.
-    w: The relaxation parameter.
-    tol: The tolerance for convergence.
-    max_iter: The maximum number of iterations.
-
-  Returns:
-    x: A numpy array representing the approximate solution.
-    k: The number of iterations required to converge.
-  """
   n = len(A)
   x = np.zeros(n)
   k = 0
